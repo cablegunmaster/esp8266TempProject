@@ -8,9 +8,11 @@ Replace the given values with your own SSID (home wireless name) + Password = (w
 and the given host is the website it should report to.
 Replace the URL with your own api.
 
+```
 const char* ssid     = "";
 const char* password = "";
 const char* host = "myapi.nl/api"; 
 String url = "/api/tempInsert/";
+```
 
 ![](ESP8266-DHT11.jpg)
