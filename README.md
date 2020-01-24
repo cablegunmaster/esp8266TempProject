@@ -1,18 +1,19 @@
 # esp8266TempProject
-code for my ESP8266 project.
-
+code for the ESP8266 device for the temperature httpclient.
 The device sends a GET Request every 5 min containing JSON to an API, and for the other time it sleeps.
-And is used for a preview on a website, this repository only covers the ESP8266 part for uploading to the website.
 
-Replace the given values with your own SSID (home wireless name) + Password = (wireless password).
-and the given host is the website it should report to.
-Replace the URL with your own api.
+- Replace the given values with your own 
+- SSID (home wireless name) 
+- Password (wireless password).
+- URL with your own API link. (without the website name)
+- Host contains the website name. ex. website.nl (without http(s)
 
 ```
 const char* ssid     = "";
 const char* password = "";
-const char* host = "myapi.nl/api"; 
 String url = "/api/tempInsert/";
+const char* host = "myapi.nl/api"; 
 ```
+
 
 ![](ESP8266-DHT11.jpg)
